@@ -4,4 +4,5 @@ echo "Joining the fragments..."
 cat $ROOT/fragments/vendor.a* > $ROOT/vendor.img.xz
 echo "Unpacking..."
 unxz $ROOT/vendor.img.xz
+mv vendor.img ${1}
 echo "Done!"
